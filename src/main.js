@@ -2,21 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import VueTailwind from 'vue-tailwind/dist/full'
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
 
-const settings = {
-  TInput: {
-    classes: 'border-2 block w-full rounded text-gray-800',
-    // ...More settings
-  },
-  TButton: {
-    classes: 'rounded-lg border block inline-flex items-center justify-center',
-    // ...More settings
-  },
-  // ...Rest of the components
-}
-
-Vue.use(VueTailwind, settings)
+Vue.use(Antd);
 
 Vue.config.productionTip = false
 
