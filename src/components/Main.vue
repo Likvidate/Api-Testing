@@ -3,16 +3,22 @@
     <div class="divButtons">
       <buttons></buttons>
     </div>
-    <div class="div1"></div>
+    <div class="div1">
+      <main-info></main-info>
+    </div>
   </div>
 </template>
 
 <script>
+import mainInfo from './MainInfo.vue'
 import Buttons from './Buttons.vue'
+import MainInfo from './MainInfo.vue'
 export default {
   components: {
-    Buttons
-  },
+    Buttons,
+    mainInfo,
+    MainInfo
+},
   name: 'Main',
   props: {
   }
